@@ -1,0 +1,317 @@
+/*global style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* body {
+  font-family: "Quintessential", cursive;
+} */
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 1.8rem;
+}
+
+/*nav bar style*/
+a {
+  color: white;
+  text-decoration: none;
+}
+.main-head {
+  background-color: rgb(2, 59, 59);
+  color: white;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  list-style: none;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+/*hero section*/
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/pexels-cottonbro-3298633.jpg);
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  z-index: -1;
+  overflow: hidden;
+  font-family: "Quintessential", cursive;
+}
+
+.hero h3 {
+  margin: 1.8rem;
+  font-weight: 400;
+}
+button {
+  padding: 1.5rem 3.5rem;
+  cursor: pointer;
+  background-color: rgb(2, 59, 59);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: rgb(2, 19, 24);
+}
+/*recpies section*/
+
+#recpies {
+  color: white;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(100, 99, 99, 0.3), transparent),
+    url(/img/pexels-klaus-nielsen-6294378.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.recpies-head {
+  min-width: 90%;
+  margin: auto;
+}
+.recpies-head h2 {
+  padding: 2rem 0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.recpies-head h3 {
+  padding: 3rem 0;
+  font-weight: 400;
+}
+.smoke {
+  position: absolute;
+  top: 0%;
+  right: 45%;
+  opacity: 0.1;
+  pointer-events: none;
+}
+.moving-smoke-1 {
+  height: 50%;
+  top: 2%;
+  animation: smokemoving 3s infinite alternate ease-in-out;
+}
+.moving-smoke-2 {
+  top: -4%;
+  right: 40%;
+  height: 60%;
+  animation: smokemoving 3s infinite alternate ease-in-out;
+}
+@keyframes smokemoving {
+  from {
+    transform: translate(0%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*Benifits section*/
+.benefits-head {
+  background-color: rgb(2, 37, 37);
+  color: white;
+  padding: 2rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.benefits-head h2 {
+  font-weight: 300;
+}
+.benefits-head h3 {
+  font-weight: normal;
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card {
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+.card h4,
+.class p {
+  padding: 2rem;
+}
+.cards img {
+  height: 50px;
+  margin: 2rem;
+}
+.card-icon {
+  background-color: rgb(7, 80, 70);
+}
+
+/*Contact section*/
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/pexels-uriel-mont-6271468.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+.form-head {
+  padding: 2rem;
+  text-align: center;
+}
+.name-form,
+.email-form {
+  text-align: center;
+  padding: 3rem;
+}
+.form-wrapper label {
+  padding: 0rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.form-wrapper input {
+  padding: 1rem 2rem;
+}
+
+/*foot section*/
+footer {
+  color: white;
+  background-color: rgb(2, 59, 59);
+}
+.foot-wrapper {
+  display: flex;
+  padding: 2rem;
+  max-width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.foot-wrapper h3 {
+  font-weight: normal;
+}
+footer h3 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+li img {
+  height: 30px;
+}
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+  .recpies-head h3 {
+    background-color: rgba(2, 19, 24, 0.8);
+  }
+  .smoke {
+    height: 40rem;
+  }
+  .moving-smoke-1 {
+    top: 10%;
+    right: 40%;
+  }
+  .moving-smoke-2 {
+    top: 6%;
+    right: 35%;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  .foot-wrapper h3 {
+    padding-bottom: 3rem;
+  }
+}
