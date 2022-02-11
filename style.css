@@ -73,7 +73,7 @@ nav ul {
 /*hero section*/
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(/img/pexels-cottonbro-3298633.jpg);
+    url(img/pexels-cottonbro-3298633.jpg);
   min-height: 90vh;
   background-size: cover;
   background-position: center;
@@ -111,7 +111,7 @@ button:hover {
   color: white;
   min-height: 100vh;
   background-image: linear-gradient(rgba(100, 99, 99, 0.3), transparent),
-    url(/img/pexels-klaus-nielsen-6294378.jpg);
+    url(img/pexels-klaus-nielsen-6294378.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -212,7 +212,7 @@ button:hover {
 #contact {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(/img/pexels-uriel-mont-6271468.jpg);
+    url(img/pexels-uriel-mont-6271468.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
